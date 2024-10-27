@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-21T18:50:33 IST" name="Master-Suite" finished-at="2024-10-21T18:51:14 IST" duration-ms="40687">
+  <suite started-at="2024-10-24T00:25:26 IST" name="Master-Suite" finished-at="2024-10-24T00:25:44 IST" duration-ms="17604">
     <groups>
       <group name="Master">
-        <method signature="TC001_AccountRegristrationTest.verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegristrationTest@5f049ea1]" name="verify_account_registration" class="testCases.TC001_AccountRegristrationTest"/>
-        <method signature="TC002_LoginTest.verify_login()[pri:0, instance:testCases.TC002_LoginTest@606e4010]" name="verify_login" class="testCases.TC002_LoginTest"/>
+        <method signature="TC001_AccountRegristrationTest.verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegristrationTest@65d09a04]" name="verify_account_registration" class="testCases.TC001_AccountRegristrationTest"/>
+        <method signature="TC002_LoginTest.verify_login()[pri:0, instance:testCases.TC002_LoginTest@45b4c3a9]" name="verify_login" class="testCases.TC002_LoginTest"/>
+        <method signature="TC_RF_002.verify_mandatory_fields_err()[pri:0, instance:testCases.TC_RF_002@399c4be1]" name="verify_mandatory_fields_err" class="testCases.TC_RF_002"/>
       </group> <!-- Master -->
       <group name="Sanity">
-        <method signature="TC002_LoginTest.verify_login()[pri:0, instance:testCases.TC002_LoginTest@606e4010]" name="verify_login" class="testCases.TC002_LoginTest"/>
+        <method signature="TC002_LoginTest.verify_login()[pri:0, instance:testCases.TC002_LoginTest@45b4c3a9]" name="verify_login" class="testCases.TC002_LoginTest"/>
       </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="TC001_AccountRegristrationTest.verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegristrationTest@5f049ea1]" name="verify_account_registration" class="testCases.TC001_AccountRegristrationTest"/>
+        <method signature="TC001_AccountRegristrationTest.verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegristrationTest@65d09a04]" name="verify_account_registration" class="testCases.TC001_AccountRegristrationTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-10-21T18:50:33 IST" name="Test" finished-at="2024-10-21T18:51:14 IST" duration-ms="40687">
+    <test started-at="2024-10-24T00:25:26 IST" name="Test" finished-at="2024-10-24T00:25:44 IST" duration-ms="17604">
       <class name="testCases.TC001_AccountRegristrationTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegristrationTest@5f049ea1]" started-at="2024-10-21T18:50:33 IST" name="setup" finished-at="2024-10-21T18:50:37 IST" duration-ms="4039" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegristrationTest@65d09a04]" started-at="2024-10-24T00:25:27 IST" name="setup" finished-at="2024-10-24T00:25:31 IST" duration-ms="4714" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,66 +27,24 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[linux]]>
+                <![CDATA[windows]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegristrationTest@5f049ea1]" started-at="2024-10-21T18:50:37 IST" name="verify_account_registration" finished-at="2024-10-21T18:50:39 IST" duration-ms="1765" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [Your Account Has Been Created!] but found [Register Account]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [Your Account Has Been Created!] but found [Register Account]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at testCases.TC001_AccountRegristrationTest.verify_account_registration(TC001_AccountRegristrationTest.java:47)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegristrationTest@65d09a04]" started-at="2024-10-24T00:25:31 IST" name="verify_account_registration" finished-at="2024-10-24T00:25:34 IST" duration-ms="2299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_account_registration -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC001_AccountRegristrationTest@5f049ea1]" started-at="2024-10-21T18:50:39 IST" name="teardown" finished-at="2024-10-21T18:50:39 IST" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC001_AccountRegristrationTest@65d09a04]" started-at="2024-10-24T00:25:34 IST" name="teardown" finished-at="2024-10-24T00:25:34 IST" duration-ms="161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TC001_AccountRegristrationTest -->
       <class name="testCases.TC002_LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@606e4010]" started-at="2024-10-21T18:50:39 IST" name="setup" finished-at="2024-10-21T18:50:41 IST" duration-ms="2220" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@45b4c3a9]" started-at="2024-10-24T00:25:34 IST" name="setup" finished-at="2024-10-24T00:25:37 IST" duration-ms="3144" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,64 +53,48 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[linux]]>
+                <![CDATA[windows]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_login()[pri:0, instance:testCases.TC002_LoginTest@606e4010]" started-at="2024-10-21T18:50:41 IST" name="verify_login" finished-at="2024-10-21T18:51:13 IST" duration-ms="31799" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at testCases.TC002_LoginTest.verify_login(TC002_LoginTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verify_login()[pri:0, instance:testCases.TC002_LoginTest@45b4c3a9]" started-at="2024-10-24T00:25:37 IST" name="verify_login" finished-at="2024-10-24T00:25:39 IST" duration-ms="2040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC002_LoginTest@606e4010]" started-at="2024-10-21T18:51:13 IST" name="teardown" finished-at="2024-10-21T18:51:14 IST" duration-ms="156" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC002_LoginTest@45b4c3a9]" started-at="2024-10-24T00:25:39 IST" name="teardown" finished-at="2024-10-24T00:25:39 IST" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TC002_LoginTest -->
+      <class name="testCases.TC_RF_002">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_RF_002@399c4be1]" started-at="2024-10-24T00:25:39 IST" name="setup" finished-at="2024-10-24T00:25:42 IST" duration-ms="3117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_mandatory_fields_err()[pri:0, instance:testCases.TC_RF_002@399c4be1]" started-at="2024-10-24T00:25:42 IST" name="verify_mandatory_fields_err" finished-at="2024-10-24T00:25:44 IST" duration-ms="1550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_mandatory_fields_err -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_RF_002@399c4be1]" started-at="2024-10-24T00:25:44 IST" name="teardown" finished-at="2024-10-24T00:25:44 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TC_RF_002 -->
     </test> <!-- Test -->
   </suite> <!-- Master-Suite -->
 </testng-results>

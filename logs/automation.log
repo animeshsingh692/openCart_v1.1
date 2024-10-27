@@ -332,3 +332,20 @@
 21:10:20.905 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Clicking Continue button----->
 21:10:21.704 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Validating Confirmation message----->
 21:10:21.707 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Completed Test TC001_AccountRegristrationTest----->
+20:08:53.893 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Starting Test TC001_AccountRegristrationTest----->
+20:08:55.100 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----All the input fields are filled with the relevant data----->
+20:08:55.100 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Clicking Continue button----->
+20:08:56.135 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Validating Confirmation message----->
+20:08:56.139 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Completed Test TC001_AccountRegristrationTest----->
+00:23:03.913 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Starting Test TC001_AccountRegristrationTest----->
+00:23:05.089 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----All the input fields are filled with the relevant data----->
+00:23:05.089 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Clicking Continue button----->
+00:23:06.002 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Validating Confirmation message----->
+00:23:06.004 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Completed Test TC001_AccountRegristrationTest----->
+00:25:31.888 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Starting Test TC001_AccountRegristrationTest----->
+00:25:33.113 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----All the input fields are filled with the relevant data----->
+00:25:33.113 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Clicking Continue button----->
+00:25:34.172 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Validating Confirmation message----->
+00:25:34.177 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Completed Test TC001_AccountRegristrationTest----->
+00:25:44.362 [main] INFO  testCases.TC_RF_002 - <-----Validating Confirmation message----->
+00:25:44.365 [main] INFO  testCases.TC_RF_002 - <-----Completed Test TC001_AccountRegristrationTest----->

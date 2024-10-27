@@ -14,7 +14,6 @@ public class TC001_AccountRegristrationTest extends BaseClass{
 	String password = randomAlphaNumeric() + "@#";
 	String phone = randomNumeric(10);
 	String subscribeRadioBtnChoice = "yes";
-	SoftAssert as = new SoftAssert();
 	
 	@Test(groups={"Master", "Regression"})
 	public void verify_account_registration() throws InterruptedException {
@@ -31,7 +30,7 @@ public class TC001_AccountRegristrationTest extends BaseClass{
 			rp.setEmail(email);
 			rp.setTelephone(phone);
 			rp.setPassword(password);
-			rp.setConfirmPasswordclick(password);
+			rp.setConfirmPassword(password);
 			rp.clickSubscribeRadioBtn(subscribeRadioBtnChoice);
 			rp.clickAgreeCheckbox();
 			
@@ -43,6 +42,7 @@ public class TC001_AccountRegristrationTest extends BaseClass{
 			String expected_confirmation_message = "Your Account Has Been Created!";
 			
 			logger.info("<-----Validating Confirmation message----->");
+			as = new SoftAssert();
 			as.assertEquals(actual_confirmation_message, expected_confirmation_message);
 			as.assertAll();
 		}catch (AssertionError ae) {

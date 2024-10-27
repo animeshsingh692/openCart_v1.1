@@ -9,7 +9,8 @@
 	  <parameter name="os" value="windows" />
     <classes>
       <class name="testCases.TC001_AccountRegristrationTest"/> 
-      <class name="testCases.TC002_LoginTest" /> 
+      <class name="testCases.TC002_LoginTest" />
+      <class name="testCases.TC_RF_002" />
       <!--	<class name="testCases.TC003_LoginTestDDT" /> -->
     </classes>
   </test>

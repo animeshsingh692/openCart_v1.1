@@ -24,6 +24,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+import org.testng.asserts.SoftAssert;
 
 public class BaseClass {
 	
@@ -33,6 +34,7 @@ public class BaseClass {
 	public Properties p;
 	FileReader file;
 	TakesScreenshot ts;
+	public SoftAssert as;
 	
 	@Parameters({"browser", "os"})
 	@BeforeClass(groups= {"Master", "Sanity"})
