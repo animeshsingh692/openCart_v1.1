@@ -27,7 +27,7 @@ pipeline{
 		        junit '**/test-output/testng-results.xml' // Publish TestNG results
 		        publishHTML(target: [
 		            reportName: 'TestNG Report',
-		            reportDir: 'reports',
+		            reportDir: 'test-output',
 		            reportFiles: 'jenkins-report.html', // Main HTML report for TestNG
 		            alwaysLinkToLastBuild: true,
 		            keepAll: true
