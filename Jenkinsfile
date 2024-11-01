@@ -14,6 +14,7 @@ pipeline{
 		}
 		stage("Test"){
 			steps{
+				sh 'mvn install'
 				sh 'mvn test'
 				echo "Testing Done"
 			}			
