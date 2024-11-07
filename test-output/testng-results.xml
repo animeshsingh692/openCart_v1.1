@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-24T00:25:26 IST" name="Master-Suite" finished-at="2024-10-24T00:25:44 IST" duration-ms="17604">
+  <suite started-at="2024-11-08T04:18:07 IST" name="Master-Suite" finished-at="2024-11-08T04:19:03 IST" duration-ms="56543">
     <groups>
       <group name="Master">
-        <method signature="TC001_AccountRegristrationTest.verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegristrationTest@65d09a04]" name="verify_account_registration" class="testCases.TC001_AccountRegristrationTest"/>
-        <method signature="TC002_LoginTest.verify_login()[pri:0, instance:testCases.TC002_LoginTest@45b4c3a9]" name="verify_login" class="testCases.TC002_LoginTest"/>
-        <method signature="TC_RF_002.verify_mandatory_fields_err()[pri:0, instance:testCases.TC_RF_002@399c4be1]" name="verify_mandatory_fields_err" class="testCases.TC_RF_002"/>
+        <method signature="TC001_AccountRegristrationTest.verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegristrationTest@1ce24091]" name="verify_account_registration" class="testCases.TC001_AccountRegristrationTest"/>
+        <method signature="TC002_LoginTest.verify_login()[pri:0, instance:testCases.TC002_LoginTest@3a52dba3]" name="verify_login" class="testCases.TC002_LoginTest"/>
+        <method signature="TC_RF_002.verify_mandatory_fields_err()[pri:0, instance:testCases.TC_RF_002@2a5c8d3f]" name="verify_mandatory_fields_err" class="testCases.TC_RF_002"/>
       </group> <!-- Master -->
       <group name="Sanity">
-        <method signature="TC002_LoginTest.verify_login()[pri:0, instance:testCases.TC002_LoginTest@45b4c3a9]" name="verify_login" class="testCases.TC002_LoginTest"/>
+        <method signature="TC002_LoginTest.verify_login()[pri:0, instance:testCases.TC002_LoginTest@3a52dba3]" name="verify_login" class="testCases.TC002_LoginTest"/>
       </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="TC001_AccountRegristrationTest.verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegristrationTest@65d09a04]" name="verify_account_registration" class="testCases.TC001_AccountRegristrationTest"/>
+        <method signature="TC001_AccountRegristrationTest.verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegristrationTest@1ce24091]" name="verify_account_registration" class="testCases.TC001_AccountRegristrationTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-10-24T00:25:26 IST" name="Test" finished-at="2024-10-24T00:25:44 IST" duration-ms="17604">
-      <class name="testCases.TC001_AccountRegristrationTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegristrationTest@65d09a04]" started-at="2024-10-24T00:25:27 IST" name="setup" finished-at="2024-10-24T00:25:31 IST" duration-ms="4714" status="PASS">
+    <test started-at="2024-11-08T04:18:07 IST" name="Test" finished-at="2024-11-08T04:19:03 IST" duration-ms="56543">
+      <class name="testCases.TC_SF_006">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_SF_006@279fedbd]" started-at="2024-11-08T04:18:29 IST" name="setup" finished-at="2024-11-08T04:18:31 IST" duration-ms="2658" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
             <param index="1">
@@ -34,21 +34,117 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegristrationTest@65d09a04]" started-at="2024-10-24T00:25:31 IST" name="verify_account_registration" finished-at="2024-10-24T00:25:34 IST" duration-ms="2299" status="PASS">
+        <test-method signature="verify_search_by_category(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_SF_006@279fedbd]" started-at="2024-11-08T04:18:31 IST" name="verify_search_by_category" data-provider="category" finished-at="2024-11-08T04:18:32 IST" duration-ms="964" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[27]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testCases.TC_SF_006.verify_search_by_category(TC_SF_006.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_search_by_category -->
+        <test-method signature="verify_search_by_category(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_SF_006@279fedbd]" started-at="2024-11-08T04:18:32 IST" name="verify_search_by_category" data-provider="category" finished-at="2024-11-08T04:18:53 IST" duration-ms="20775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[57]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_search_by_category -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_SF_006@279fedbd]" started-at="2024-11-08T04:18:53 IST" name="teardown" finished-at="2024-11-08T04:18:54 IST" duration-ms="1269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TC_SF_006 -->
+      <class name="testCases.TC001_AccountRegristrationTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegristrationTest@1ce24091]" started-at="2024-11-08T04:18:07 IST" name="setup" finished-at="2024-11-08T04:18:10 IST" duration-ms="3035" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegristrationTest@1ce24091]" started-at="2024-11-08T04:18:10 IST" name="verify_account_registration" finished-at="2024-11-08T04:18:12 IST" duration-ms="1831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_account_registration -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC001_AccountRegristrationTest@65d09a04]" started-at="2024-10-24T00:25:34 IST" name="teardown" finished-at="2024-10-24T00:25:34 IST" duration-ms="161" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC001_AccountRegristrationTest@1ce24091]" started-at="2024-11-08T04:18:12 IST" name="teardown" finished-at="2024-11-08T04:18:13 IST" duration-ms="1224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TC001_AccountRegristrationTest -->
-      <class name="testCases.TC002_LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@45b4c3a9]" started-at="2024-10-24T00:25:34 IST" name="setup" finished-at="2024-10-24T00:25:37 IST" duration-ms="3144" status="PASS">
+      <class name="testCases.TC_SF_008">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_SF_008@b3ca52e]" started-at="2024-11-08T04:18:54 IST" name="setup" finished-at="2024-11-08T04:18:57 IST" duration-ms="2800" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
             <param index="1">
@@ -60,21 +156,47 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_login()[pri:0, instance:testCases.TC002_LoginTest@45b4c3a9]" started-at="2024-10-24T00:25:37 IST" name="verify_login" finished-at="2024-10-24T00:25:39 IST" duration-ms="2040" status="PASS">
+        <test-method signature="verify_navigating_to_productCompare_from_search()[pri:0, instance:testCases.TC_SF_008@b3ca52e]" started-at="2024-11-08T04:18:57 IST" name="verify_navigating_to_productCompare_from_search" finished-at="2024-11-08T04:18:58 IST" duration-ms="969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_navigating_to_productCompare_from_search -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_SF_008@b3ca52e]" started-at="2024-11-08T04:18:58 IST" name="teardown" finished-at="2024-11-08T04:18:59 IST" duration-ms="1231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TC_SF_008 -->
+      <class name="testCases.TC002_LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@3a52dba3]" started-at="2024-11-08T04:18:13 IST" name="setup" finished-at="2024-11-08T04:18:16 IST" duration-ms="2734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_login()[pri:0, instance:testCases.TC002_LoginTest@3a52dba3]" started-at="2024-11-08T04:18:16 IST" name="verify_login" finished-at="2024-11-08T04:18:18 IST" duration-ms="1759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC002_LoginTest@45b4c3a9]" started-at="2024-10-24T00:25:39 IST" name="teardown" finished-at="2024-10-24T00:25:39 IST" duration-ms="159" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC002_LoginTest@3a52dba3]" started-at="2024-11-08T04:18:18 IST" name="teardown" finished-at="2024-11-08T04:18:18 IST" duration-ms="690" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TC002_LoginTest -->
-      <class name="testCases.TC_RF_002">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_RF_002@399c4be1]" started-at="2024-10-24T00:25:39 IST" name="setup" finished-at="2024-10-24T00:25:42 IST" duration-ms="3117" status="PASS">
+      <class name="testCases.TC_PC_003">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_PC_003@45c7e403]" started-at="2024-11-08T04:18:59 IST" name="setup" finished-at="2024-11-08T04:19:02 IST" duration-ms="2636" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
             <param index="1">
@@ -86,11 +208,63 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_mandatory_fields_err()[pri:0, instance:testCases.TC_RF_002@399c4be1]" started-at="2024-10-24T00:25:42 IST" name="verify_mandatory_fields_err" finished-at="2024-10-24T00:25:44 IST" duration-ms="1550" status="PASS">
+        <test-method signature="verify_navigating_to_product_compare_page_from_search_results()[pri:0, instance:testCases.TC_PC_003@45c7e403]" started-at="2024-11-08T04:19:02 IST" name="verify_navigating_to_product_compare_page_from_search_results" finished-at="2024-11-08T04:19:03 IST" duration-ms="1003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_navigating_to_product_compare_page_from_search_results -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_PC_003@45c7e403]" started-at="2024-11-08T04:19:03 IST" name="teardown" finished-at="2024-11-08T04:19:03 IST" duration-ms="466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TC_PC_003 -->
+      <class name="testCases.TC_SF_009">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_SF_009@752325ad]" started-at="2024-11-08T04:18:24 IST" name="setup" finished-at="2024-11-08T04:18:26 IST" duration-ms="2622" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_sort_button()[pri:0, instance:testCases.TC_SF_009@752325ad]" started-at="2024-11-08T04:18:26 IST" name="verify_sort_button" finished-at="2024-11-08T04:18:27 IST" duration-ms="958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_sort_button -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_SF_009@752325ad]" started-at="2024-11-08T04:18:27 IST" name="teardown" finished-at="2024-11-08T04:18:29 IST" duration-ms="1232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TC_SF_009 -->
+      <class name="testCases.TC_RF_002">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_RF_002@2a5c8d3f]" started-at="2024-11-08T04:18:18 IST" name="setup" finished-at="2024-11-08T04:18:21 IST" duration-ms="2696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_mandatory_fields_err()[pri:0, instance:testCases.TC_RF_002@2a5c8d3f]" started-at="2024-11-08T04:18:21 IST" name="verify_mandatory_fields_err" finished-at="2024-11-08T04:18:22 IST" duration-ms="1408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_mandatory_fields_err -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_RF_002@399c4be1]" started-at="2024-10-24T00:25:44 IST" name="teardown" finished-at="2024-10-24T00:25:44 IST" duration-ms="155" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_RF_002@2a5c8d3f]" started-at="2024-11-08T04:18:22 IST" name="teardown" finished-at="2024-11-08T04:18:24 IST" duration-ms="1240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

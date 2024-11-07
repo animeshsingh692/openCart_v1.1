@@ -356,3 +356,43 @@
 00:15:33.495 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Completed Test TC001_AccountRegristrationTest----->
 00:15:42.159 [main] INFO  testCases.TC_RF_002 - <-----Validating Confirmation message----->
 00:15:42.164 [main] INFO  testCases.TC_RF_002 - <-----Completed Test TC001_AccountRegristrationTest----->
+01:54:45.843 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Starting Test TC001_AccountRegristrationTest----->
+01:54:45.868 [main] ERROR testCases.TC001_AccountRegristrationTest - Test Failed due to an unexpected exception
+01:54:45.868 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Completed Test TC001_AccountRegristrationTest----->
+01:54:53.373 [main] ERROR testCases.TC_RF_002 - Test Failed due to an unexpected exception
+01:54:53.373 [main] INFO  testCases.TC_RF_002 - <-----Completed Test TC001_AccountRegristrationTest----->
+04:07:02.933 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Starting Test TC001_AccountRegristrationTest----->
+04:07:04.646 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----All the input fields are filled with the relevant data----->
+04:07:04.646 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Clicking Continue button----->
+04:07:05.748 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Validating Confirmation message----->
+04:07:05.752 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Completed Test TC001_AccountRegristrationTest----->
+04:07:15.215 [main] INFO  testCases.TC_RF_002 - <-----Validating Confirmation message----->
+04:07:15.222 [main] INFO  testCases.TC_RF_002 - <-----Completed Test TC001_AccountRegristrationTest----->
+04:10:03.163 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Starting Test TC001_AccountRegristrationTest----->
+04:10:05.057 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----All the input fields are filled with the relevant data----->
+04:10:05.057 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Clicking Continue button----->
+04:10:06.700 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Validating Confirmation message----->
+04:10:06.703 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Completed Test TC001_AccountRegristrationTest----->
+04:10:16.999 [main] INFO  testCases.TC_RF_002 - <-----Validating Confirmation message----->
+04:10:17.003 [main] INFO  testCases.TC_RF_002 - <-----Completed Test TC001_AccountRegristrationTest----->
+02:26:00.833 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Starting Test TC001_AccountRegristrationTest----->
+02:26:01.968 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----All the input fields are filled with the relevant data----->
+02:26:01.969 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Clicking Continue button----->
+02:26:02.881 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Validating Confirmation message----->
+02:26:02.885 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Completed Test TC001_AccountRegristrationTest----->
+02:26:11.441 [main] INFO  testCases.TC_RF_002 - <-----Validating Confirmation message----->
+02:26:11.460 [main] INFO  testCases.TC_RF_002 - <-----Completed Test TC001_AccountRegristrationTest----->
+04:15:27.301 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Starting Test TC001_AccountRegristrationTest----->
+04:15:28.363 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----All the input fields are filled with the relevant data----->
+04:15:28.363 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Clicking Continue button----->
+04:15:29.318 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Validating Confirmation message----->
+04:15:29.322 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Completed Test TC001_AccountRegristrationTest----->
+04:15:39.569 [main] INFO  testCases.TC_RF_002 - <-----Validating Confirmation message----->
+04:15:39.573 [main] INFO  testCases.TC_RF_002 - <-----Completed Test TC001_AccountRegristrationTest----->
+04:18:10.623 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Starting Test TC001_AccountRegristrationTest----->
+04:18:11.654 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----All the input fields are filled with the relevant data----->
+04:18:11.655 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Clicking Continue button----->
+04:18:12.437 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Validating Confirmation message----->
+04:18:12.441 [main] INFO  testCases.TC001_AccountRegristrationTest - <-----Completed Test TC001_AccountRegristrationTest----->
+04:18:22.961 [main] INFO  testCases.TC_RF_002 - <-----Validating Confirmation message----->
+04:18:22.965 [main] INFO  testCases.TC_RF_002 - <-----Completed Test TC001_AccountRegristrationTest----->

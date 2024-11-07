@@ -72,8 +72,8 @@ public class BaseClass {
 					return;
 			}
 		}
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(35));
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(p.getProperty("appURL2"));
